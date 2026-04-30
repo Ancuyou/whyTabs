@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Todo Kill",
+  "version": "2.0.0",
+  "description": "Capture intent. Track focus. Kill with closure.",
+  "permissions": ["storage", "tabs"],
+  "action": {
+    "default_popup": "src/popup/index.html",
+    "default_icon": "public/icons/icon48.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "src/newtab/index.html"
+  },
+  "background": {
+    "service_worker": "src/background/sw.js",
+    "type": "module"
+  },
+  "icons": {
+    "48": "public/icons/icon48.png"
+  }
+}
