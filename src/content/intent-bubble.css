@@ -1,0 +1,15 @@
+:root { --tk-bg:#0f1115; --tk-surface:#1a1d24; --tk-text:#e6e8eb; --tk-muted:#8b949e; --tk-accent:#ffb74d; --tk-border:#2d333b; --tk-radius:10px; }
+.tk-intent-bubble { position:fixed; top:72px; right:20px; z-index:2147483647; opacity:0; transform:translateY(-8px); transition:all 0.2s ease; font-family:system-ui,-apple-system,sans-serif; color:var(--tk-text); }
+.tk-intent-bubble.tk-bubble-show { opacity:1; transform:translateY(0); }
+.tk-intent-bubble.tk-bubble-hide { opacity:0; transform:translateY(-6px); }
+.tk-bubble-content { display:flex; align-items:center; gap:12px; background:var(--tk-bg); border:1px solid var(--tk-border); border-radius:var(--tk-radius); padding:12px 14px; box-shadow:0 10px 30px rgba(0,0,0,0.35); }
+.tk-bubble-icon { font-size:18px; }
+.tk-bubble-body { display:flex; flex-direction:column; gap:6px; }
+.tk-bubble-title { font-size:0.85rem; color:var(--tk-muted); }
+.tk-bubble-input { width:220px; background:var(--tk-surface); border:1px solid var(--tk-border); border-radius:8px; padding:6px 10px; color:var(--tk-text); font-size:0.9rem; }
+.tk-bubble-input:focus { outline:none; border-color:var(--tk-accent); }
+.tk-bubble-actions { display:flex; gap:6px; }
+.tk-btn { border:none; padding:6px 10px; border-radius:8px; cursor:pointer; font-size:0.8rem; }
+.tk-btn-primary { background:var(--tk-accent); color:#000; }
+.tk-btn-ghost { background:transparent; border:1px solid var(--tk-border); color:var(--tk-muted); }
+
